@@ -1,9 +1,17 @@
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Product from "./pages/Product";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+
 function App() {
   return (
-    <div className="container mt-5">
-      <h1 className="text-primary">Hello, Bootstrap!</h1>
-      <button className="btn btn-success">Knapp</button>
-    </div>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='products' element={<Product/>}/>
+      <Route path='/about' element={<About/>}/>
+      <Route path='/contact' element={<Contact/>}/>
+    </Routes>
   );
 }
 
