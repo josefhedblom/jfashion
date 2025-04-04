@@ -1,0 +1,50 @@
+/* Product Style Start */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: 0.3s;
+    background: #fff;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.price {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.buy-btn {
+    background: #f05e8a;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    background: white;
+    color: #f05e8a;
+    border: 1px solid #f05e8a;
+}
+
+/* Product Style End */
