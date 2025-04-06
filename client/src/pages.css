@@ -1,0 +1,35 @@
+/*Style Pages (excl Products) start*/
+
+.pages-container {
+    padding: 20px;
+    background-color: white;
+}
+
+.pages-title {
+    font-size: 36px;
+    color: black;
+    margin-bottom: 20px;
+    text-align:center;
+
+}
+
+.pages-text { 
+        font-size: 17px;
+        color: rgb(0, 0, 0);
+        line-height: 1.6;
+        /*text-align: right;*/
+}
+
+
+.image-wrapper {
+    display: flex;
+    justify-content: flex-end; /*bild till höger*/
+}
+
+.custom-image {
+    width: 30%;
+    height: auto;
+}
+
+
+/*Style Pages (excl Products) start*/
