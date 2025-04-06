@@ -1,5 +1,6 @@
 import React from "react";
 import Dressman from "./assets/Dressman.png";
+
 function App() {
   return (
     <>
@@ -64,7 +65,44 @@ function App() {
           </div>
         </div>
       </header>
+
+      <footer className="row row-cols-5 py-5 my-5 border-top container mx-auto">
+        <div className="col">
+          <a href="/" className="d-flex align-items-center mb-3 link-dark text-decoration-none">
+            <svg className="bi me-2" width="40" height="32">
+              <use xlinkHref="#bootstrap" />
+            </svg>
+          </a>
+          <p className="text-muted">© 2025</p>
+        </div>
+
+        <div className="col" />
+
+        {[...Array(3)].map((_, index) => (
+          <div className="col" key={index}>
+            <h5>Section</h5>
+            <ul className="nav flex-column">
+              <li className="nav-item mb-2">
+                <a href="#" className="nav-link p-0 text-muted">Home</a>
+              </li>
+              <li className="nav-item mb-2">
+                <a href="#" className="nav-link p-0 text-muted">Features</a>
+              </li>
+              <li className="nav-item mb-2">
+                <a href="#" className="nav-link p-0 text-muted">Pricing</a>
+              </li>
+              <li className="nav-item mb-2">
+                <a href="#" className="nav-link p-0 text-muted">FAQs</a>
+              </li>
+              <li className="nav-item mb-2">
+                <a href="#" className="nav-link p-0 text-muted">About</a>
+              </li>
+            </ul>
+          </div>
+        ))}
+      </footer>
     </>
   );
 }
+
 export default App;
