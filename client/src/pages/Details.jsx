@@ -1,10 +1,13 @@
-import Breadcrumbs from '../components/Breadcrumbs';
-import Categories from '../components/Shop/Categories';
-import styles from '../css/Details.module.css';
-import { useLocation } from 'react-router-dom';
-import AutoCropImage from '../components/AutoCropImage';
-import Bestsellers from '../components/Bestsellers';
-import Navbar from '../components/Navbar';
+import Breadcrumbs from "../components/Breadcrumbs";
+import Categories from "../components/Shop/Categories";
+import styles from "../css/Details.module.css";
+import { useLocation } from "react-router-dom";
+import AutoCropImage from "../components/AutoCropImage";
+import Bestsellers from "../components/Bestsellers";
+import Navbar from "../components/Navbar";
+import OrderModal from "../components/OrderModal";
+import { useState } from "react";
+import Footer from "../components/Footer";
 
 const Product = () => {
   const { state } = useLocation();
@@ -54,8 +57,9 @@ const Product = () => {
             <p className={styles.description}>{product.description}</p>
           </div>
         </div>
-            <Bestsellers></Bestsellers>
+        <Bestsellers></Bestsellers>
       </div>
+      <Footer />
     </>
   );
 };
