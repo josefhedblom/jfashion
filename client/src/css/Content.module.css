@@ -1,0 +1,86 @@
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 2%;
+    row-gap: 0.5rem;
+    width: 80%;
+}
+
+.banner {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+@media (max-width: 1100px) {
+    .banner {
+        height:300px;
+    }
+}
+
+@media (max-width: 800px) {
+    .banner {
+        height:200px;
+    }
+}
+  
+
+.productsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: clamp(8px, 2vw, 32px);
+    width: 100%;
+}
+
+.moreBtn {
+    all: unset;
+    cursor: pointer;
+
+    padding-inline: 90px;
+    padding-block: 20px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid rgb(157, 154, 154);
+}
+
+.divider {
+    width: 15%;
+    height: 1px;
+    background-color:rgb(193, 190, 190);
+    margin-top: 0.5rem;
+}
+
+.category {
+    all: unset;
+    cursor: pointer;
+    padding-inline: 90px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 1500px) {
+    .mainContent {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .productsContainer {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .productsContainer {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
