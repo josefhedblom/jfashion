@@ -1,7 +1,6 @@
 import React from "react";
-import Dressman from "./assets/Dressman.png";
 
-function App() {
+function Frontpage() {
   return (
     <>
       <header>
@@ -45,13 +44,7 @@ function App() {
           </div>
         </nav>
 
-        <div
-          className="p-5 text-center bg-image"
-          style={{
-            backgroundImage: `url(${Dressman})`,
-            height: "400px",
-          }}
-        >
+        <div className="p-5 text-center bg-image">
           <div className="mask" style={{ backgroundColor: "rgba(0, 0, 0, 0.6)", height: "100%" }}>
             <div className="d-flex justify-content-center align-items-center h-300">
               <div className="text-white">
@@ -83,19 +76,29 @@ function App() {
             <h5>Section</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted">Home</a>
+                <a href="#" className="nav-link p-0 text-muted">
+                  Home
+                </a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted">Features</a>
+                <a href="#" className="nav-link p-0 text-muted">
+                  Features
+                </a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted">Pricing</a>
+                <a href="#" className="nav-link p-0 text-muted">
+                  Pricing
+                </a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted">FAQs</a>
+                <a href="#" className="nav-link p-0 text-muted">
+                  FAQs
+                </a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted">About</a>
+                <a href="#" className="nav-link p-0 text-muted">
+                  About
+                </a>
               </li>
             </ul>
           </div>
@@ -105,4 +108,4 @@ function App() {
   );
 }
 
-export default App;
+export default Frontpage;
