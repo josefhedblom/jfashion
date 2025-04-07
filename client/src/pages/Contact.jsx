@@ -4,6 +4,7 @@ const Contact = () => {
     return (
         <div className="pages-container">
             <h1 className="pages-title">Contact Us</h1>
+            <h2><br /></h2>
 
             <p className="pages-text">
                 Thought you were a gold, but realized silver was yours to wear? Fret not!
@@ -12,25 +13,17 @@ const Contact = () => {
                 <br /><br />
                 Please email us at <b>returns@jfashion.com</b> and let us know:
                 <ul>
-                    <li>What is the item?</li>
-                    <li>Who are you? (Name and address)</li>
+                    What is the item? <br />
+                    Who are you? (Name and address)
                 </ul>
             </p>
 
             <p className="pages-text">
-                Just want to say hi? Our customer service team is at <b>hello@jfashion.com</b>.
+               <br /> <br />Just want to say hi? Our customer service team is at <b>hello@jfashion.com</b>.
             </p>
 
-            <div className="image-wrapper">
-                <img
-                    src="https://cdn.dummyjson.com/products/images/groceries/Lemon/thumbnail.png"
-                    alt="lemon product"
-                    className="custom-image"
-                />
-            </div>
-
             <p className="pages-text">
-                Prefer old-school mail? Send it to:
+                <br />Prefer the old-fashioned kind of mail? Send it to: <br />
                 <br />
                 <b>JFashion</b>
                 <br />
