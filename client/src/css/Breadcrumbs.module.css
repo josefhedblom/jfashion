@@ -1,0 +1,24 @@
+.breadcrumbs {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.breadcrumbs a {
+    color: #545353;
+    text-decoration: none;
+}
+
+.breadcrumbs li + li::before {
+    content: "›";
+    margin: 0 0.5rem;
+    color: #545353;
+}
+
+.current {
+    text-transform: capitalize;
+    color: #545353;
+}
