@@ -61,7 +61,7 @@
     justify-content: flex-start;
     text-align: left;
     padding: 2%;
-    gap: 1rem;   
+    gap: 1rem;
 }
 
 .brand {
@@ -100,6 +100,8 @@
 .buyBtn:hover {
     background: rgba(255, 168, 183, 0.429);
 }
+
+
 
 @media (max-width: 900px) {
     .details {
