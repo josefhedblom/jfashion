@@ -10,8 +10,7 @@ import Footer from "../components/Footer";
 
 function Frontpage() {
   return (
-    <>
-    
+    <div className={styles.mywrap}>
       <Navbar></Navbar>
       <div className={styles.mainContent}>
       <header className={styles.banner}>
@@ -29,7 +28,7 @@ function Frontpage() {
       </div>
       </div>
       <Footer></Footer>
-    </>
+    </div>
   );
 }
 

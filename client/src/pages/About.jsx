@@ -1,13 +1,18 @@
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import '../pages.css';
+import styles from '../css/Content.module.css'
 
 const About = () => {
     return (
         <>
             <Navbar></Navbar>
             <div className="pages-container">
-                <h1 className="pages-title">About Us</h1>
+                <div className={styles.about}>
+                    <div className={styles.mask}>
+                        <h1 className="pages-title">About Us</h1>
+                    </div>
+                </div>
 
                 <p className="pages-text">
                     We believe in a world where you are free to be <b>YOU</b>, without judgment.
@@ -23,14 +28,6 @@ const About = () => {
                     <br />
                     Their vision — to bring fashionable items of all categories together — culminates in JFashion.
                 </p>
-
-                <div className="image-wrapper">
-                    <img
-                        src="https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/thumbnail.png"
-                        alt="makeup product"
-                        className="custom-image"
-                    />
-                </div>
             </div>
             <Footer></Footer>
         </>

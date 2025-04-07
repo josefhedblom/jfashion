@@ -4,8 +4,8 @@ import styles from '../css/Content.module.css'
 import beauty from '../assets/beauty.png';
 import clothing from '../assets/clothing.png';
 import fragrances from '../assets/fragrances.png';
-import sunglasses from '../assets/fragrances.png';
-import jewellery from '../assets/fragrances.png';
+import sunglasses from '../assets/sunglasses.png';
+import jewellery from '../assets/jewellery.png';
 
 const images = {
     beauty: beauty,
