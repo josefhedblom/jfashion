@@ -27,15 +27,19 @@
 }
 
 .picContainer {
-    background: #ffdcac39;
-    padding-top: 40%;
-    padding-bottom: 10%;
+    position: relative;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background-color: #fcf3e5;
+    padding-inline: 10%;
+    padding-top: 30%;
 }
 
 .pic {
     width: 100%;
-    height: 200px;
+    height: 100%;
     object-fit: contain;
+    display: block;
     padding: 1rem;
 }
 

@@ -1,12 +1,10 @@
-import Breadcrumbs from "../components/Breadcrumbs";
-import Categories from "../components/Shop/Categories";
-import Spotlight from "../components/Shop/Spotlight";
-import styles from "../css/Details.module.css";
-import { useLocation } from "react-router-dom";
-import AutoCropImage from "../components/AutoCropImage";
-import Navbar from "../components/Navbar";
-import OrderModal from "../components/OrderModal";
-import { useState } from "react";
+import Breadcrumbs from '../components/Breadcrumbs';
+import Categories from '../components/Shop/Categories';
+import styles from '../css/Details.module.css';
+import { useLocation } from 'react-router-dom';
+import AutoCropImage from '../components/AutoCropImage';
+import Bestsellers from '../components/Bestsellers';
+import Navbar from '../components/Navbar';
 
 const Product = () => {
   const { state } = useLocation();
@@ -56,12 +54,7 @@ const Product = () => {
             <p className={styles.description}>{product.description}</p>
           </div>
         </div>
-
-        <div className={styles.bestContainer}>
-          <h1 className={styles.spotTitle}>Others also viewed</h1>
-        </div>
-
-        <Spotlight></Spotlight>
+            <Bestsellers></Bestsellers>
       </div>
     </>
   );

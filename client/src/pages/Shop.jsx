@@ -1,11 +1,11 @@
 import Breadcrumbs from '../components/Breadcrumbs';
 import Banner from '../components/Shop/Banner';
 import Categories from '../components/Shop/Categories';
-import Spotlight from '../components/Shop/Spotlight';
 import styles from '../css/Shop.module.css';
 import heartIcon from '../assets/heart.svg';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Bestsellers from '../components/Bestsellers';
 
 const Shop = () => {
     return (
@@ -20,9 +20,7 @@ const Shop = () => {
                     <h1 className={styles.spotTitle}>Bestsellers</h1>
                     <img src={heartIcon} alt="heart" className={styles.heartIcon} />
                 </div>
-
-                <Spotlight></Spotlight>
-            </div>
+            <Bestsellers></Bestsellers>
         <Footer></Footer>
         </>
     );

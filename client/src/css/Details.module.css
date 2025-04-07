@@ -31,24 +31,24 @@
     margin-bottom: 2rem;
 }
 
-.pic {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-    display: block;
-}
-
 .picContainer {
-    background: #ffdcac1e;
-    padding-top: 10%;
+    position: relative;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background-color: #fcf3e5;
+    padding-inline: 10%;
+    padding-top: 30%;
     padding-bottom: 10%;
     border: solid 1px rgb(188, 187, 187);
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
+.pic {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    padding: 1rem;
+}
 
 .left {
     width: 50%;
@@ -112,10 +112,6 @@
 
     .right {
         width: 100%;
-    }
-
-    .picContainer {
-        height: 40vh;
     }
 
     .brand {
