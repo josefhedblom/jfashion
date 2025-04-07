@@ -4,6 +4,7 @@ import Spotlight from '../components/Shop/Spotlight';
 import styles from '../css/Details.module.css';
 import { useLocation } from 'react-router-dom';
 import AutoCropImage from '../components/AutoCropImage';
+import Navbar from '../components/Navbar';
 
 const Product = () => {
     const { state } = useLocation();
@@ -12,6 +13,8 @@ const Product = () => {
     if (!product) return <p>Loading...</p>;
 
     return (
+        <>
+        <Navbar></Navbar>
         <div className={styles.mainContent}>
             <Breadcrumbs></Breadcrumbs>
             <Categories></Categories>
@@ -37,6 +40,7 @@ const Product = () => {
 
             <Spotlight></Spotlight>
         </div>
+        </>
     );
 }
 
