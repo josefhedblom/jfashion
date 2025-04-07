@@ -1,9 +1,9 @@
 import Breadcrumbs from '../components/Breadcrumbs';
 import Categories from '../components/Shop/Categories';
-import Spotlight from '../components/Shop/Spotlight';
 import styles from '../css/Details.module.css';
 import { useLocation } from 'react-router-dom';
 import AutoCropImage from '../components/AutoCropImage';
+import Bestsellers from '../components/Bestsellers';
 
 const Product = () => {
     const { state } = useLocation();
@@ -35,7 +35,7 @@ const Product = () => {
                 <h1 className={styles.spotTitle}>Others also viewed</h1>
             </div>
 
-            <Spotlight></Spotlight>
+            <Bestsellers></Bestsellers>
         </div>
     );
 }

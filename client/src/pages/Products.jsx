@@ -18,7 +18,7 @@ const Product = () => {
     <div className={styles.mainContent}>
         <Banner category={category}></Banner>
         <h1 className={styles.category}>{category}</h1>
-        <Breadcrumbs current={category}></Breadcrumbs>
+        <Breadcrumbs></Breadcrumbs>
         <Categories></Categories>
         <div id="products" className={styles.productsContainer}>
             {products.map((product) => {

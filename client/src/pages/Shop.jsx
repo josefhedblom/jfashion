@@ -1,9 +1,9 @@
 import Breadcrumbs from '../components/Breadcrumbs';
 import Banner from '../components/Shop/Banner';
 import Categories from '../components/Shop/Categories';
-import Spotlight from '../components/Shop/Spotlight';
 import styles from '../css/Shop.module.css';
 import heartIcon from '../assets/heart.svg';
+import Bestsellers from '../components/Bestsellers';
 
 const Shop = () => {
     return (
@@ -17,7 +17,8 @@ const Shop = () => {
                 <img src={heartIcon} alt="heart" className={styles.heartIcon}/>
             </div>
 
-            <Spotlight></Spotlight>
+            {/* <Spotlight></Spotlight> */}
+            <Bestsellers></Bestsellers>
         </div>
     );
 }
