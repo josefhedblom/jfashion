@@ -1,161 +1,173 @@
-.mainContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-block: 2%;
-    row-gap: 0.5rem;
-    width: 80%;
+.mywrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
 }
 
-.test{
-    width: 100%;
-    border: solid 1px green;
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 2%;
+  row-gap: 0.5rem;
+  width: 80%;
 }
+
+.test {
+  width: 100%;
+  border: solid 1px green;
+}
+
 .banner {
-    background-image: url('../assets/frontpromo.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  background-image: url('../assets/frontpromo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 @media (max-width: 1100px) {
-    .banner {
-        height:300px;
-    }
+  .banner {
+    height: 300px;
+  }
 }
 
 @media (max-width: 800px) {
-    .banner {
-        height:200px;
-    }
+  .banner {
+    height: 200px;
+  }
 }
 
-.mask{
-    background-color: rgba(0, 0, 0, 0.6);
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
+.mask {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
 }
 
-.test3{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-family: 'Montserrat';
-    font-weight: bold;
+.test3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  white-space: normal;
+  padding: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .test3 {
+    font-size: 80%;
     white-space: normal;
-    padding: 1rem;
-}
-
-@media (max-width: 1000px){
-    .test3{
-        font-size: 80%;
-        white-space: normal;
-    }
+  }
 }
 
 .buybutton {
-    width: 50%;
-    align-self: center;
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    font-family: 'Montserrat';
-    font-weight: bold;
-    font-size: 1rem;
-    color: white; 
-    border: 2px solid white; 
-    background-color: transparent;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-align: center;
-    text-decoration: none;
-    margin-bottom: 10px;
-  }
-  
-  .buybutton:hover {
-    background-color: #000;
-    color: #fff;
-  }
-
-  .title{
-    margin-top: 1000px;
-    margin: 0;
-  }
-
-  .myfooter{
-    padding: 1%;
-    border: gray solid 1px;
-    width: 100%;
-  }
-
-  .myfooter p{
-   margin: 1px;
-   padding: 0px
-  }
-
-  .test5{
-    font-weight: bold;
-    font-family: "Wingdings 3";
-  }
-
-  .mynav{
-    width: 100%;
-    margin-top: 10px;
-    position: sticky;
-    top: 0;
-    background-color: white;
-    padding: 1rem;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-
-  .categories{
-    padding: 10px;
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-    column-gap: 1rem;
-    row-gap: 1rem;
-
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 100%;
-  }
-
-.categories a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Roboto';
-    font-weight: 400;
+  width: 50%;
+  align-self: center;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 10px;
 }
 
-.navlogo{
-    margin: 0;
-    font-family: "winding 3";
-    font-weight: bold;
-    font-size: larger;
+.buybutton:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.title {
+  margin-top: 1000px;
+  margin: 0;
+}
+
+.myfooter {
+  padding: 1%;
+  border: gray solid 1px;
+  width: 100%;
+  /* position: fixed;
+    left: 0;
+    bottom: 0; */
+}
+
+.myfooter p {
+  margin: 1px;
+  padding: 0px
+}
+
+.test5 {
+  font-weight: bold;
+  /* font-family: "Wingdings 3"; */
+}
+
+.mynav {
+  width: 100%;
+  margin-top: 10px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 1rem;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.categories {
+  padding: 10px;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  row-gap: 1rem;
+
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.categories a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+
+.navlogo {
+  margin: 0;
+  font-family: "winding 3";
+  font-weight: bold;
+  font-size: larger;
 }
 
 
 
-.imagecontainer{
-    display: flex;
-    overflow: hidden; 
-    gap: 10px;
+.imagecontainer {
+  display: flex;
+  overflow: hidden;
+  gap: 10px;
 }
 
-.imagecontainer img{
-    width: 50%;
-    height: auto;
-    flex-shrink: 1;
+.imagecontainer img {
+  width: 50%;
+  height: auto;
+  flex-shrink: 1;
 }

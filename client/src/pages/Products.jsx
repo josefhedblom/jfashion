@@ -26,7 +26,7 @@ const Product = () => {
         <Categories></Categories>
         <div id="products" className={styles.productsContainer}>
           {products.map((product) => {
-            return <Card key={product.id} product={product} label={true}></Card>;
+            return <Card key={product.id} product={product} label={true} color="#fcf3e5"></Card>;
           })}
         </div>
         <div className={styles.divider}></div>

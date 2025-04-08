@@ -37,7 +37,7 @@
     overflow: hidden;
     background-color: #fcf3e5;
     padding-inline: 10%;
-    padding-top: 30%;
+    /* padding-top: 30%; */
     padding-bottom: 10%;
     border: solid 1px rgb(188, 187, 187);
 }
@@ -61,7 +61,7 @@
     justify-content: flex-start;
     text-align: left;
     padding: 2%;
-    gap: 1rem;   
+    gap: 1rem;
 }
 
 .brand {
