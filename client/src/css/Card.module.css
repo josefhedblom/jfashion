@@ -1,0 +1,74 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s;
+    position: relative;
+}
+
+.mytag {
+    background-color: rgba(210, 251, 164, 0.471);
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    border-radius: 0.1rem;
+    z-index: 2;
+    padding-inline: 15px;
+}
+
+.linkReset {
+    all: unset;
+    display: block;
+    cursor: pointer;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.picContainer {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background-color: #eefad7;
+    padding-inline: 10%;
+    padding-top: 30%;
+}
+
+.pic {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    padding: 1rem;
+}
+
+.description {
+    margin-top: 2vh;
+}
+
+.brand {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+.price {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+.title {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Montserrat';
+}
